@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Card</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nd.d-flex {
+            flex-basis: 85%;
+        }
+        
+        label.lbtxt {
+            flex-basis: 20%;
+        }
+        
+        textarea#ndtxt {
+            /* width: 100%; */
+            flex-basis: 80%;
+        }
+        
+        input#sqd {
+            flex-basis: 45%;
+        }
+        
+        input#nqd {}
+        
+        label.mb-2.nqd {}
+        
+        label.mb-2.sqd {}
+        
+        form {
+            width: 100%;
+        }
+        
+        .ldt-label,
+        label.mb-2.sqd,
+        label.mb-2.nqd {
+            flex-basis: 25%;
+        }
+        
+        .top-content {
+            background-color: lavender;
+        }
+        
+        select#ldt,
+        input#nqd {
+            flex-basis: 27%;
+        }
+        
+        di.nd {
+            flex-basis: 75%;
+            display: flex;
+        }
+        
+        .rdo {
+            flex-basis: 25%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-4 col-lg-4">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Số chứng từ</th>
+                            <th>Ngày chứng từ</th>
+                            <th>Tổng cộng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>102</td>
+                            <td>12/2/2012</td>
+                            <td>120.000.000VND</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col col-md-4 col-lg-8">
+
+                <div class="top-content p-3 mb-2 text-black">
+                    <form action=" # ">
+                        <div class="d-flex  my-3">
+                            <label for="email2 " class="d-lg-inline-block ldt-label">Loại dự toán:</label>
+                            <select class="form-control d-lg-inline" id="ldt">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                        </select>
+                        </div>
+                        <div class="d-flex  my-3">
+                            <label for="pwd2 " class="mb-2 sqd ">Số quyết định:</label>
+                            <input type="text " class="form-control mb-2 " id="sqd" name="pswd ">
+                        </div>
+                        <div class="d-flex my-3">
+                            <label for="nqd" class="mb-2 nqd">Ngày quyết định:</label>
+                            <input type="date" class="form-control mb-2" id="nqd" name="pswd ">
+                        </div>
+                        <div class="d-flex my-3">
+                            <div class="rdo">
+                                <label for="nqd" class="mb-2 d-block nqd">Cập nhật theo:</label>
+                                <input type="radio" class="d-inline-block" name="rdo_chuong" checked>Chương,Loại khoản
+                            </div>
+                            <div class="nd d-flex">
+                                <label for="ndtxt" class="mb-2 lbtxt d-inline-block">Nội dung:</label>
+                                <textarea class="d-inline-block" rows="3" id="ndtxt"></textarea>
+                            </div>
+                        </div>
+                        <div class="my-3">
+                            <label for="show-month" class="mb-2 d-block show-month">Hiển thị theo:</label>
+                            <div class="d-block">
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" checked name="optradio">Quý                                 </label>
+                                </div>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                  <input type="radio" class="form-check-input" name="optradio">Tháng
+                                </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex my-3 justify-content-center">
+                            <button type="submit" class="btn btn-info">Thêm dòng </button>
+                            <button type="reset" class="btn border border-dark">Xóa dòng </button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="mt-5">
+                    <p>Số dòng 1</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="text-center">
+                                <th>Mã tài khoản</th>
+                                <th>Mã nghiệp vụ</th>
+                                <th>Mã nguồn vốn</th>
+                                <th>Mã chương</th>
+                                <th>Mã loại khoản</th>
+                                <th>Mã phòng ban</th>
+                                <th>Mã dự án</th>
+                                <th>Mã liên quan khác</th>
+                                <th>Mã Hạng mục CT</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                                <td>John</td>
+                                <td>Doe</td>
+                                <td>john@example.com</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</html>
